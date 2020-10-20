@@ -1,0 +1,12 @@
+Setup React using create-react-app
+Setup Firebase
+Setup React Router
+Build the nav bar
+Build the banner
+Build the product component
+Introduce React Context API
+Setup Add to basket button
+Build Checkout page
+Build subtotal component
+Build Login Page
+Deploy the app Live on Firebase Hosting

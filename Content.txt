@@ -1,0 +1,5 @@
+Context API
+Firebase (user authentication + database)
+React JS front end
+Firebase hosting to deploy live
+React Router
