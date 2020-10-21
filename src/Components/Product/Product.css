@@ -38,6 +38,11 @@
 .product > button {
     background-color: #f0c14b;
     border: 1px solid;
-    border-color: #a88734,#9c7e31,#846a20;
     margin-bottom: 20px;
+    font-size: 11.5px;
+    padding: 7px;
+    padding-left: 13px;
+    padding-right: 13px;
+    border-color: white;
+    border-radius: 3px;
 }
