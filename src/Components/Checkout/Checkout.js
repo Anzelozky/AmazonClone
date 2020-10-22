@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import { useStateValue } from '../../StateManagement/StateProvider'
 import "./Checkout.css"
 import CheckoutProduct from "../CheckoutProduct/CheckoutProduct"
@@ -6,7 +6,6 @@ import Subtotal from "../Subtotal/Subtotal"
 
 function Checkout() {
     const [{basket}] = useStateValue()
-    const [fullPrice,setFullPrice] = useState()
 
     return (
         <div className="checkout">
@@ -42,10 +41,6 @@ function Checkout() {
 
             {basket?.length > 0 && (
                 <Subtotal/>
-                // <div className="checkout__right">
-                //     <p>Subtotal ({basket.length} artículos)</p>
-                //     <p>$ <strong></strong></p>
-                // </div>
             )}
         </div>
     )
