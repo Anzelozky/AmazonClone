@@ -2,7 +2,7 @@ import React from 'react'
 import { useStateValue } from '../../StateManagement/StateProvider'
 import "./Product.css"
 
-function Product({id, title, image, price, rating}) {
+function Product({ id, title, image, price, rating}) {
 
     const [{basket},dispatch] = useStateValue();
 
@@ -32,8 +32,8 @@ function Product({id, title, image, price, rating}) {
                     {
                         Array(rating)
                         .fill()
-                        .map((_) => (
-                            <span role="img" aria-label="star">
+                        .map((_,i) => (
+                            <span role="img" aria-label="star" key={i}>
                                 ⭐
                             </span>
                         ))
