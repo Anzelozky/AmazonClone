@@ -4,7 +4,7 @@ import "./Product.css"
 
 function Product({id, title, image, price, rating}) {
 
-    const [{basket}, dispatch] = useStateValue();
+    const [{basket},dispatch] = useStateValue();
 
     //Action that triggers dispatch on global reducer
     const addToBasket = () => {
@@ -33,7 +33,9 @@ function Product({id, title, image, price, rating}) {
                         Array(rating)
                         .fill()
                         .map((_) => (
-                            <p>⭐</p>
+                            <span role="img" aria-label="star">
+                                ⭐
+                            </span>
                         ))
                     }
                 </div>

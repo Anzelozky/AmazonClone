@@ -13,6 +13,7 @@ function Header() {
             {/* logo izquierda */}
             <Link to="/">
             <img className="header__logo"
+            alt="amazon background"
             src="https://archive.bsideslv.org/2016/wp-content/uploads/2013/02/amzn_white.png"/>
             </Link>
 
